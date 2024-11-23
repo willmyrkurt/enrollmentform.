@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+
+    <style>
+
+        body {
+            background-image: url('file:///C:/Users/Willmyr%20Kurt/Verastigue/school.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;size: 40;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #ffffffcc; /* Transparent white background */
+            border: 3px solid rebeccapurple;
+            border-radius: 5px;
+            color: rebeccapurple;
+        }
+
+        h3, ol {
+            border: 3px solid rebeccapurple; 
+            padding: 25px;
+            border-radius: 20px;
+            background-color: #ffffffcc; 
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+        }
+
+        form {
+            text-align: center;
+            border: 3px solid rebeccapurple; 
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ffffffcc; 
+            margin-top: 20px;
+        }
+
+        table {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        table, th, td {
+            border: 2px solid black;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+            background-color: lightgray;
+        }
+        
+    </style>
+
+</head>
+<body>
+ 
+    <h1>Student Enrollment Form</h1>
+    
+
+    <h3>Instructions:</h3>
+    <ol>
+        <li>Fill in the form fields.</li>
+        <li>Check your interests.</li>
+        <li>Click "Enroll Now" to submit.</li>
+    </ol>
+        <img = src = ""C:\Users\Willmyr Kurt\Verastigue\school.jpg>
+        
+    <form>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+    
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+    
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+    
+        <label>Sex:</label>
+        <input type="radio" id="male" name="sex" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="sex" value="Female" required>
+        <label for="female">Female</label><br><br>
+    
+        <label for="course">Course Options:</label>
+        <select id="course" name="course">
+            <option value="BSIT">BSIT</option>
+            <option value="BSSW">BSSW</option>
+            <option value="BSPA">BSPA</option>
+            <option value="ABELS">ABELS</option>
+            <option value="BSA">BSA</option>
+            <option value="BTVTE">BTVTE</option>
+            <option value="BSAIS">BSAIS</option>
+            <option value="BSE">BSE</option>
+            <option value="DHRS">DHRS</option>
+            <option value="BSCS">BSCS</option>
+
+        </select><br><br>
+    
+        <label>Interests:</label><br>
+        <input type="checkbox" id="webdev" name="interests" value="Web Development">
+        <label for="webdev">Web Development</label><br>
+        <input type="checkbox" id="datasci" name="interests" value="Data Science">
+        <label for="datasci">Data Science</label><br>
+        <input type="checkbox" id="networking" name="interests" value="Networking">
+        <label for="networking">Networking</label><br>
+        <input type="checkbox" id="graphicdesign" name="interests" value="Graphic Design">
+        <label for="graphicdesign">Graphic Design</label><br>
+        <input type="checkbox" id="UI/UX" name="interests" value="UI/UX">
+        <label for="networking">UI/UX</label><br>
+        <input type="checkbox" id="AI" name="interests" value="Artificial Intelligence">
+        <label for="networking">Artificial Intelligence</label><br>
+        <input type="checkbox" id="cybersec" name="interests" value="Cybersecurity">
+        <label for="networking">Cybersecurity</label><br>
+        <input type="checkbox" id="IoT" name="interests" value="Internet of Things">
+        <label for="networking">Cybersecurity</label><br>
+        <input type="checkbox" id="cloud comp" name="interests" value="Cloud Computing">
+        <label for="networking">Cloud Computing</label><br>
+        <input type="checkbox" id="gamedev" name="interests" value="Game Development">
+        <label for="networking">Game Development></label><br><br>
+    
+        <button type="submit">Enroll Now</button>
+    </form>
+
+    <table>
+        
+        <style>
+
+            table, th, td {
+                border:2px solid black;
+                border-collapse: collapse;
+          }
+          th, td {
+                background-color: lightgray;
+          }
+
+        </style>
+          
+          <table style="width:100%">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email Address</th>
+            <th>Age</th>
+            <th>Sex</th>
+            <th>Course</th>
+            <th>Interests</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Julia Montes</td>
+            <td>juliamontes@gmail.com</td>
+            <td>28</td>
+            <td>Female</td>
+            <td>BSIT</td>
+            <td>Web Development</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Wilfred Ford</td>
+            <td>wilfredford@gmail.com</td>
+            <td>25</td>
+            <td>Male</td>
+            <td>BSSW</td>
+            <td>Data Science</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Shane Luke</td>
+            <td>shaneluke@gmail.com</td>
+            <td>35</td>
+            <td>Female</td>
+            <td>BSPA</td>
+            <td>Networking</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Charles Thomas</td>
+            <td>charlesthomas@gmail.com</td>
+            <td>26</td>
+            <td>Male</td>
+            <td>ABELS</td>
+            <td>Graphic Design</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Greziel Montero</td>
+            <td>grezielmontero@gmail.com</td>
+            <td>19</td>
+            <td>Female</td>
+            <td>BSA</td>
+            <td>UI/UX</td>
+        <tr>
+            <td>6</td>
+            <td>Zephany Villa</td>
+            <td>zephanyvilla@gmail.com</td>
+            <td>24</td>
+            <td>Female</td>
+            <td>BTVTE</td>
+            <td>Artificial Intelligence</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>John Skit</td>
+            <td>johnskit@gmail.com</td>
+            <td>27</td>
+            <td>Male</td>
+            <td>BSAIS</td>
+            <td>Cybersecurity</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Maria Smith</td>
+            <td>mariasmith@gmail.com</td>
+            <td>34</td>
+            <td>Female</td>
+            <td>BSE</td>
+            <td>Internet of Things</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Charles Thomas</td>
+            <td>charlesthomas@gmail.com</td>
+            <td>17</td>
+            <td>Male</td>
+            <td>DHRS</td>
+            <td>Cloud Computing</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Ashley Portley</td>
+            <td>ashleyportley@gmail.com</td>
+            <td>19</td>
+            <td>Female</td>
+            <td>BSCS</td>
+            <td>Game Development</td>
+        </tr>
+       
+    </table>
+
+
+    
+</body>
+</html>
